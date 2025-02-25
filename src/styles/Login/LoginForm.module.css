@@ -1,0 +1,112 @@
+/* Archivo: LoginForm.module.css */
+
+/* Contenedor principal de login */
+.loginContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4A90E2, #357ABD);
+  padding: 20px;
+}
+
+/* Tarjeta de login */
+.loginCard {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Estilos para el título */
+h2 {
+  color: #357ABD;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Estilos de los campos de entrada */
+.inputCustom {
+  width: 100%;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+/* Estilo cuando los campos de entrada están enfocados */
+.inputCustom:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+}
+
+/* Etiquetas de los campos de entrada */
+.form-label {
+  font-weight: bold;
+  color: #333;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Botón estilizado */
+.btnCustom {
+  background: #4A90E2;
+  border: none;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btnCustom:hover {
+  background: #2f6bb2;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+}
+
+.btnCustom:disabled {
+  background: #B0D0FF;
+  cursor: not-allowed;
+}
+
+/* Espaciado de los campos de entrada */
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos generales */
+.text-center {
+  text-align: center;
+}
+
+/* Efecto de sombra sutil para los inputs */
+.inputCustom::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
